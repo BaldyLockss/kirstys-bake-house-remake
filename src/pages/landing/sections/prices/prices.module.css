@@ -1,7 +1,6 @@
 .container {
     display: flex;
     flex-direction: column;
-    /* border-top: 1px solid var(--clr-font); */
 }
 
 .title {
@@ -36,7 +35,7 @@
 .items {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    place-items: center;
+    /* place-items: center; */
     padding: calc(var(--padding)* 3);
 
 
