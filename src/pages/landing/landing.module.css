@@ -1,0 +1,32 @@
+.container {
+    background-color: var(--clr-primary);
+    height: inherit;
+}
+
+.title {
+
+    padding: calc(var(--padding)*3);
+    position: relative;
+
+
+    h1 {
+        font-size: var(--fs-xl);
+        font-weight: var(--fw-regular);
+        font-family: var(--font-heading);
+        text-transform: capitalize;
+        color: var(--clr-font);
+    }
+
+    p {
+        font-size: var(--fs-body);
+        font-weight: var(--fw-regular);
+        font-family: var(--font-body);
+        transform: translate(clamp(15%, 1vw, 40%), clamp(-60%, 1vw, -120%));
+        color: var(--clr-font);
+        width: 70%;
+
+        span {
+            text-transform: capitalize;
+        }
+    }
+}

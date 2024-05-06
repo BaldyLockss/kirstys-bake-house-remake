@@ -1,0 +1,48 @@
+.container {
+    background-color: var(--clr-primary);
+    display: flex;
+    flex-direction: column;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    ul {
+        padding: var(--padding);
+    }
+
+    li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+            font-size: var(--fs-body);
+            text-transform: capitalize;
+            text-decoration: underline;
+            color: var(--clr-font);
+            font-family: var(--font-body);
+        }
+
+        img {
+            height: 2rem;
+            aspect-ratio: 1;
+        }
+    }
+
+}
+
+.smallprint {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--clr-font);
+
+    p {
+        font-size: var(--fs-list);
+        color: var(--clr-font);
+        font-family: var(--font-body);
+    }
+}

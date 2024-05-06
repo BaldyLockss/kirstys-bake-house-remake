@@ -1,0 +1,100 @@
+:root {
+  --div-border: 1px solid blue;
+  --container-border: 1px solid red;
+  --clr-primary: #eefff6;
+  --clr-secondary: #c2f5cf;
+  --clr-accents: #feb8fe;
+  --clr-font: #474e47;
+
+  --font-body: 'Roboto', sans-serif;
+  --font-heading: "island Moments", sans-serif;
+
+  --padding-mobile: 0.25rem;
+  --padding-desktop: 1rem;
+  --padding: clamp(var(--padding-mobile), 1vw, var(--padding-desktop));
+
+  --margin-desktop: 1rem;
+  --margin-mobile: 0.5rem;
+  --margin: clamp(var(--margin-mobile), 1vw, var(--margin-desktop));
+
+  --gap-mobile: 0.5rem;
+  --gap-desktop: 1.5rem;
+  --gap: clamp(var(--gap-mobile), 1vw, var(--gap-desktop));
+
+  --fs-xl-heading-desktop: 96px;
+  --fs-xl-heading-mobile: 36px;
+  --fs-xl: clamp(var(--fs-xl-heading-mobile), 6vw, var(--fs-xl-heading-desktop));
+
+  --fs-heading-desktop: 72px;
+  --fs-heading-mobile: 26px;
+  --fs-heading: clamp(var(--fs-heading-mobile), 6vw, var(--fs-heading-desktop));
+
+
+  --fs-sub-heading-desktop: 44px;
+  --fs-sub-heading-mobile: 16px;
+  --fs-sub-heading: clamp(var(--fs-sub-heading-mobile), 6vw, var(--fs-sub-heading-desktop));
+
+
+  --fs-l-body-desktop: 27px;
+  --fs-l-body-mobile: 10px;
+  --fs-l-body: clamp(var(--fs-l-body-mobile), 2vw, var(--fs-l-body-desktop));
+
+
+  --fs-body-desktop: 16px;
+  --fs-body-mobile: 8px;
+  --fs-body: clamp(var(--fs-body-mobile), 2vw, var(--fs-body-desktop));
+
+
+  --fs-list-desktop: 14px;
+  --fs-list-mobile: 6px;
+  --fs-list: clamp(var(--fs-list-mobile), 2vw, var(--fs-list-desktop));
+
+  --fw-bolder: bolder;
+  --fw-bold: bold;
+  --fw-regular: regular;
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-font);
+
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+::-webkit-scrollbar {
+  margin-block: .5em;
+  border-radius: 10000vmax;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--clr-primary);
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--clr-accents);
+  border-radius: 10000vmax;
+}

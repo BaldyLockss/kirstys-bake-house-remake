@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    padding-inline: calc(var(--padding)*3);
+    position: relative;
+    text-align: right;
+
+
+
+    h2 {
+        font-size: var(--fs-xl);
+        font-weight: var(--fw-regular);
+        font-family: var(--font-heading);
+        text-transform: capitalize;
+        color: var(--clr-font);
+    }
+
+    p {
+        font-size: var(--fs-body);
+        font-weight: var(--fw-regular);
+        font-family: var(--font-body);
+        color: var(--clr-font);
+        width: 70%;
+        transform: translate(clamp(39%, 1vw, 20%), clamp(-90%, 1vw, -120%));
+
+    }
+
+    span {
+        text-transform: capitalize;
+    }
+}
+
+.bento__container {
+    display: grid;
+    place-items: center;
+    padding: var(--padding);
+    height: 45vh;
+
+    .bento__grid {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        background-color: var(--clr-primary);
+        overflow: auto;
+        object-fit: contain;
+        border-radius: 16px;
+    }
+}
