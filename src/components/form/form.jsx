@@ -27,9 +27,12 @@ function Form() {
     <form
       className={styles.container__form}
       id="enquire"
-      onSubmit={submitHandler}
+      // onSubmit={submitHandler}
+      onSubmit="submit"
+      method="push"
       netlify
     >
+      <input type="hidden" name="form-name" value="contact" />
       <div className={styles.form__items}>
         <div className={styles.form__item}>
           <label htmlFor="fname">
