@@ -28,6 +28,7 @@ function Form() {
       className={styles.container__form}
       id="enquire"
       onSubmit={submitHandler}
+      netlify
     >
       <div className={styles.form__items}>
         <div className={styles.form__item}>
