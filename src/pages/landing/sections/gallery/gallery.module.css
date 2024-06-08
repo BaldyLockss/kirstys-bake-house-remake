@@ -34,18 +34,25 @@
 }
 
 .bento__container {
-    display: grid;
-    place-items: center;
-    padding: var(--padding);
-    height: 45vh;
+    place-self: center;
+    padding: 2rem;
+    width: 80%;
+}
 
-    .bento__grid {
-        display: flex;
-        height: 100%;
+.bento__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+
+    .grid__item:nth-last-of-type(even) {
+        scale: 1.2;
+    }
+
+    img {
         width: 100%;
-        background-color: var(--clr-primary);
-        overflow: auto;
-        object-fit: contain;
-        border-radius: 16px;
+        height: 100%;
+        object-fit: cover;
+        border-radius: var(--img-radius);
     }
 }

@@ -53,6 +53,7 @@
   --fw-bold: bold;
   --fw-regular: regular;
 
+  --img-radius: 1rem
 }
 
 * {
@@ -78,11 +79,12 @@ button {
   background: none;
 }
 
-img {
+/* img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+
+} */
 
 ::-webkit-scrollbar {
   margin-block: .5em;

@@ -1,6 +1,7 @@
 import styles from "./landing.module.css";
-// import Carousel from "../../components/carousel/carousel";
-// import { carouselData } from "../../data/carouselData";
+import Carousel from "../../components/carousel/carousel";
+import { carouselData } from "../../data/carouselData";
+import { bento } from "../../data/bento";
 import Cakes from "./sections/cakes/cakes";
 import Prices from "./sections/prices/prices";
 import Gallery from "./sections/gallery/gallery";
@@ -14,10 +15,10 @@ function Landing() {
           <span>delicious</span> home baked cakes & treats made to order.
         </p>
       </div>
-      <Gallery />
-      {/* <Carousel data={carouselData} /> */}
-      <Cakes />
 
+      <Carousel data={carouselData} />
+      <Cakes />
+      <Gallery data={bento} />
       <Prices />
     </section>
   );

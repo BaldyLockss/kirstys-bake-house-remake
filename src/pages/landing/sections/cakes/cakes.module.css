@@ -36,7 +36,14 @@
     /* width: 18rem; */
     width: clamp(10rem, 30vw, 18rem);
     aspect-ratio: 1;
-    border-radius: 16px;
+    border-radius: var(--img-radius);
     overflow: hidden;
     object-position: center;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
 }

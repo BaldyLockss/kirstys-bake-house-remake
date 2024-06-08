@@ -1,6 +1,6 @@
 import styles from "./gallery.module.css";
 
-function Gallery() {
+function Gallery(props) {
   return (
     <div className={styles.container} id="gallery">
       <div className={styles.title}>
@@ -11,10 +11,13 @@ function Gallery() {
       </div>
       <div className={styles.bento__container}>
         <div className={styles.bento__grid}>
-          <img src="/assets/images/starlink.jpg" alt="roccket" />
-          <img src="/assets/images/ussf.jpg" alt="roccket" />
-          <img src="/assets/images/multiplanetary.jpg" alt="roccket" />
-          <img src="/assets/images/testflight.jpg" alt="roccket" />
+          {props.data.map((item, i) => {
+            return (
+              <div className={styles.grid__item} key={i}>
+                <img src={item.src} alt={item.alt} />
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

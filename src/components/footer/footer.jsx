@@ -13,7 +13,7 @@ function Footer() {
       </div>
 
       <div className={styles.smallprint}>
-        <p>data on your registration of what ever</p>{" "}
+        {/* <p>data on your registration of what ever</p>{" "} */}
         <p>Website designed by Anthony P Reilly ¦ Copyright (C) 2024 </p>
       </div>
     </div>

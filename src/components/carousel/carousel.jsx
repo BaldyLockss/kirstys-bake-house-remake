@@ -51,9 +51,11 @@ function Carousel(props) {
           >
             {props.data.map((item, i) => {
               return (
-                <li key={i}>
-                  <img src={item.src} alt={item.alt} />
-                </li>
+                <div className={styles.slide__item}>
+                  <li key={i}>
+                    <img src={item.src} alt={item.alt} />
+                  </li>
+                </div>
               );
             })}
           </ul>

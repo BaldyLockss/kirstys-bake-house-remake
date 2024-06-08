@@ -35,7 +35,7 @@ function Prices() {
         </div>
         <div className={styles.item}>
           <h3>brownies</h3>
-          <p>regualr £15</p>
+          <p>regular £15</p>
           <p>stuffed £20</p>
         </div>
         <div className={styles.item}>
